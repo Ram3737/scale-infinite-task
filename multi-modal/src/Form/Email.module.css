@@ -1,0 +1,205 @@
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+.form {
+  cursor: pointer;
+  font: inherit;
+  color: white;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 0.5rem 2.5rem;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30vh;
+}
+
+.control label {
+  display: block;
+  color: rgb(83, 82, 82);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.control input {
+  font-size: 2rem;
+  background-color: rgb(198, 196, 196);
+  border-radius: 4px;
+  border: 1px solid white;
+  width: 100%;
+  text-align: left;
+  padding: 0.25rem;
+  margin-bottom: 1%;
+  height: 5rem;
+}
+
+.actions {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-content: center;
+  width: 100%;
+}
+
+.button {
+  cursor: pointer;
+  width: 16%;
+  font: inherit;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #087f5b;
+  border: 1px solid #087f5b;
+  border-radius: 4px;
+  padding: 1rem 2.5rem;
+  margin-left: 20px;
+  text-decoration: none;
+  margin-bottom: 5%;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  transition: all 0.5s;
+}
+
+.button:hover {
+  background-color: #0c4735;
+  border-color: #0c4735;
+  color: white;
+  transition: 0.5s;
+}
+
+section {
+  background-color: black;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.progressSection {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+progress {
+  width: 73%;
+  height: 0.4rem;
+  z-index: 5;
+  background-color: #087f5b;
+  position: absolute;
+}
+
+.progressCircle {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  z-index: 6;
+  gap: 14%;
+}
+
+.progressCircle ul {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  padding-left: 10%;
+  padding-right: 10%;
+  gap: 25%;
+  flex-wrap: nowrap;
+  width: 100%;
+  z-index: 6;
+  align-items: center;
+  align-content: center;
+}
+
+.progressCircle li {
+  list-style-type: none;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 2px solid #087f5b;
+  background: white;
+  z-index: 100px;
+  position: relative;
+}
+
+.insideCircle {
+  list-style-type: none;
+  width: 95%;
+  height: 93%;
+  border-radius: 50%;
+  border: 1px solid white;
+  background: #087f5b;
+  z-index: 100px;
+  position: absolute;
+  margin-left: 3%;
+  margin-top: 4%;
+}
+
+p {
+  color: black;
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  .progressCircle ul {
+    gap: 23%;
+  }
+
+  .button {
+    width: 22%;
+  }
+  progress {
+    width: 70%;
+  }
+}
+
+@media (max-width: 62em) {
+  .progressCircle ul {
+    gap: 20%;
+    margin-left: 2rem;
+  }
+  .button {
+    width: 26%;
+  }
+  progress {
+    width: 66%;
+  }
+}
+
+@media (max-width: 50em) {
+  .progressCircle ul {
+    gap: 17%;
+  }
+
+  progress {
+    width: 60%;
+  }
+
+  .button {
+    width: 33%;
+  }
+}
+
+@media (max-width: 40em) {
+  .progressCircle ul {
+    gap: 11%;
+  }
+  .button {
+    width: 38%;
+  }
+}
+
+@media (max-width: 35em) {
+  .progressCircle ul {
+    gap: 8%;
+  }
+}
